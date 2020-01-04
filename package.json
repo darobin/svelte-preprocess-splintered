@@ -1,0 +1,25 @@
+{
+  "name": "svelte-preprocess-splintered",
+  "version": "0.0.1",
+  "description": "Svelte components with HTML/Svelte, CSS, and JS in separate files",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darobin/svelte-preprocess-splintered.git"
+  },
+  "author": "Robin Berjon <robin@berjon.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/darobin/svelte-preprocess-splintered/issues"
+  },
+  "homepage": "https://github.com/darobin/svelte-preprocess-splintered#readme",
+  "eslintConfig": {
+    "extends": "robin"
+  },
+  "devDependencies": {
+    "eslint-config-robin": "^6.1.0"
+  }
+}
