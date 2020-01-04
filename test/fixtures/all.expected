@@ -1,0 +1,18 @@
+
+<script context="module">
+import me from 'you';
+</script>
+
+<script>
+document.getElementById('id');
+</script>
+
+<style>
+main {
+  display: run-in;
+}
+</style>
+
+<p>
+  Cela dit, je porte en moi tous les rêves du monde.
+</p>
