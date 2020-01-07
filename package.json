@@ -1,6 +1,6 @@
 {
   "name": "svelte-preprocess-splintered",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Svelte components with HTML/Svelte, CSS, and JS in separate files",
   "main": "index.js",
   "scripts": {
