@@ -12,3 +12,29 @@ to your Svelte file wrapped in respectively `<script context="module">`, `<scrip
 
 You should keep importing `.svelte` as per usual. This module really just pre-bundles JS and CSS
 into Svelte files.
+
+## Installation
+
+Just the usual: `npm install -D --save svelte-preprocess-splintered`.
+
+## Usage
+
+Importing `svelte-preprocess-splintered` returns a function, and calling that function will
+produce a preprocessor which you can pass to Svelte's `preprocess` option (which can accept this
+value or an array of such values). This works in Rollup, Sapper, `svelte-loader`… Here is an
+example `rollup.config.js` using splintered Svelte:
+
+```js
+import svelte from 'rollup-plugin-svelte';
+import splintered from 'svelte-preprocess-splintered'
+
+export default {
+  …,
+  plugins: [
+    svelte({
+      preprocess: splintered(),
+      …,
+    }),
+  ],
+};
+```
