@@ -17,9 +17,6 @@ module.exports = function splintered () {
             makeFileReader(dir, bn, 'css', 'style', (err, css, cssDep) => {
               if (err) return reject(err);
               let dependencies = [modDep, jsDep, cssDep].filter(Boolean);
-              // XXX:
-              //  - check that this is correct with docs
-              //  - include in tests
               resolve({ code: `\n${[mod, js, css].filter(Boolean).join('')}${content}`, dependencies });
             });
           });
